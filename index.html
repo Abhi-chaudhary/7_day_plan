@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <title>full responsive fitness website design tutorial</title>
+</head>
+<body>
+
+<!-- header section start -->
+
+<header>
+
+
+
+<div class="fas fa-bars"></div>
+
+<div class="logo">
+  <a href="#"><h1><span>Gymi</span>staan</h1></a>
+</div>
+
+</header>
+
+<!-- header section end -->
+
+
+<!-- home sectin starts -->
+
+<section id="home">
+
+<h1>Weekly 7-Day Split </h1>
+<h3>- Gym Workout Plan -</h3>
+<a href="#con"><button>Get Ready!</button></a>
+
+
+
+
+
+
+</section>
+
+<!-- home sectin ends -->
+
+<!-- feature section starts -->
+
+
+
+
+<!-- feature section ends -->
+
+
+<!-- about section starts -->
+
+<section id="about">
+
+
+
+<div class="content" id="con">
+  <h1>Tips for each workout</h1>
+  <p>
+    
+    
+
+    Go slow – focus on your technique
+    <br>
+    <br>
+    Rest for 60-90 seconds between each set
+    <br>
+    <br>
+    Keep moving when you're resting – a gentle walk around the gym floor will keep your muscles warm and your heart rate up
+    <br>
+    <br>
+    Ideally perform the workout in the order listed, but if equipment is busy then switch the order for convenience.
+    <br>
+    <br>
+  </p>
+
+  
+
+ 
+
+</section>
+
+
+
+<!-- about section starts -->
+
+
+<!-- gallery section starts -->
+
+<section id="gallery">
+
+  <h1>Each Day Plan</h1>
+
+<div class="image-container">
+
+  <div class="image">
+    <img src="chest.webp" alt="">
+    <div class="info">
+      <a href="#"><button>4 sets of 8–12 repetitions with an incline dumbbell press
+         <br>
+         <br>
+        3 sets of 10 repetitions of incline dumbbell flyes
+        <br>
+        <br>
+        3 sets of 15 repetitions of cable crossovers
+        <br>
+        <br>
+        4 sets of 20 repetitions of push-ups</button></a>
+    </div>
+  </div>
+
+  <div class="image">
+    <img src="shoulder.jpg" alt="">
+    <div class="info">
+      <a href="#"><button>4 sets of 12 reps seated dumbbell shoulder press
+        <br>
+        <br>
+        4 sets of 10-12 reps with a standing barbell military press
+        <br><br>
+        4 sets of 12 reps of dumbbell lateral raises
+        <br><br>
+        3 sets of 15 reps of rear deltoid flyes
+        <br><br>
+        Upright rows with an EZ bar – 4 sets of 15 reps
+        <br><br>
+        Front lifts with a dumbbell – 4 sets of 12 reps</button></a>
+    </div>
+  </div>
+
+  <div class="image">
+    <img src="leg.jpg" alt="">
+    <div class="info">
+      <a href="#"><button>Squat hacks – 4 sets of 10 reps
+          <br><br>
+        3 sets of 10 repetitions on the leg press machine
+        <br><br>
+        3 sets of 10 repetitions on the leg extension machine
+        <br><br>
+        3 sets of 10 repetitions of hamstring curls
+        <br><br>
+        3 sets of 20 repetitions of calf raise</button></a>
+    </div>
+  </div>
+
+  <div class="image">
+    <img src="back.jpg" alt="">
+    <div class="info">
+      <a href="#"><button>4 sets of 10 repetitions of chin-ups
+          <br><br>
+        4 sets of 12 repetitions of wide grip lat pull-downs
+        <br><br>
+        4 sets of 12 repetitions of close grip lat pull-downs
+        <br><br>
+        4 sets of 8 repetitions with a barbell bent-over rows
+        <br><br>
+        4 sets of 8–10 repetitions per arm with dumbbell rows</button></a>
+    </div>
+  </div>
+
+  <div class="image">
+    <img src="arms.jpg" alt="">
+    <div class="info">
+      <a href="#"><button>4 sets of double-arm dumbbell curls Reps: 10–12
+         <br>
+         <br>
+        4 sets of 12 repetitions on the preacher curl machine
+        <br><br>
+        4 sets of 15 repetitions of triceps rope pushdowns
+        <br><br>
+        4 sets of 15 repetitions of overhead triceps rope extensions
+        <br><br>
+        4 sets of 10 repetitions skull crushers
+      </button></a>
+    </div>
+  </div>
+
+  <div class="image">
+    <img src="repeat.jpg" alt="">
+    <div class="info">
+      <a href="#"><button> Use this day to help you catch up on 
+        <br><br>
+        lagging body parts and muscle groups or 
+        <br><br>
+        to help you attain your goals much faster.</button></a>
+    </div>
+  </div>
+
+</div>
+
+</section>
+
+<div> 
+  <h3 style="margin: 5rem; background-color: black; color: azure; height: 5rem; text-align: center; padding-top: 2rem;">7th day will be the rest day</h3>
+</div>
+
+
+<!-- gallery section ends -->
+
+
+
+<!-- contact us section starts -->
+
+
+
+
+
+
+<!-- contact us section ends -->
+
+<!-- footer sectin starts -->
+
+
+
+
+<!-- footer sectin ends -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- script starts -->
+
+
+<script>
+  $(document).ready(function(){
+
+    $('.fa-bars').click(function(){
+      $(this).toggleClass('fa-times');
+      $('nav').toggleClass('nav-toggle');
+    });
+
+    $('nav ul li a').click(function(){
+      $('.fa-bars').removeClass('fa-times');
+      $('nav').removeClass('nav-toggle');
+    });
+
+
+    $(window).scroll(function(){
+      if($(window).scrollTop() >= 20){
+        $('header').addClass('active');
+      }else{
+        $('header').removeClass('active');
+      }
+    });
+
+  });
+</script>
+
+</body>
+</html>
